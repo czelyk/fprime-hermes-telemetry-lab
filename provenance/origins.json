@@ -1,0 +1,366 @@
+[
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\packaging_work_20261022\\lab.py",
+    "destination": "fprime-hermes-telemetry-lab\\tools\\lab.py",
+    "original_sha256": "1b45a75434723d108fad04c55557cd8f7179902c28b24f77db6993a70f950a22",
+    "curated_sha256": "1b45a75434723d108fad04c55557cd8f7179902c28b24f77db6993a70f950a22",
+    "transformation": "LF normalization"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\packaging_work_20261022\\run_fprime.py",
+    "destination": "fprime-hermes-telemetry-lab\\tests\\run.py",
+    "original_sha256": "590f2ce48064a689d6ab478fe0177a28a33483b5ffd0b9bbd2b87e44cc0b415e",
+    "curated_sha256": "c3cf371cea3071af9b84123e6b01d08f9060fc5b6915106823063cf55016b30b",
+    "transformation": "Documented packaging portability changes; archived source untouched"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\implementation_fprime_hermes_20261021\\Run-Lab.ps1",
+    "destination": "fprime-hermes-telemetry-lab\\Run-Lab.ps1",
+    "original_sha256": "d26fb89cb49203a70be1e573db5ba850324a77e95f50523efceb2caef656dbbf",
+    "curated_sha256": "1e074a7441e81c3998f07dc3a93873b5eb8d07107f0a4bb70cb3679722403dea",
+    "transformation": "Documented packaging portability changes; archived source untouched"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\implementation_fprime_hermes_20261021\\Dockerfile",
+    "destination": "fprime-hermes-telemetry-lab\\Dockerfile",
+    "original_sha256": "90c182a0ee8660222b444f119bdf58060601d9debbf8fda63da32dfaf1d7b56e",
+    "curated_sha256": "90c182a0ee8660222b444f119bdf58060601d9debbf8fda63da32dfaf1d7b56e",
+    "transformation": "LF normalization"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\implementation_fprime_hermes_20261021\\.dockerignore",
+    "destination": "fprime-hermes-telemetry-lab\\.dockerignore",
+    "original_sha256": "7cc6802f7d0bf53512f65ef342a4b11d1fdc10e110572000aee8e2172e1c6a58",
+    "curated_sha256": "7cc6802f7d0bf53512f65ef342a4b11d1fdc10e110572000aee8e2172e1c6a58",
+    "transformation": "LF normalization"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\implementation_fprime_hermes_20261021\\requirements.lock.txt",
+    "destination": "fprime-hermes-telemetry-lab\\requirements.lock.txt",
+    "original_sha256": "0cc8b419d529cbc371e7823648b1770da450df43fabf7c173676922e7f2c8d18",
+    "curated_sha256": "0cc8b419d529cbc371e7823648b1770da450df43fabf7c173676922e7f2c8d18",
+    "transformation": "LF normalization"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\implementation_fprime_hermes_20261021\\sources.lock.json",
+    "destination": "fprime-hermes-telemetry-lab\\sources.lock.json",
+    "original_sha256": "2c7459b8a731f5a309fa34e27e85c1de0c7427c957ec98b12d52a023ec0d952b",
+    "curated_sha256": "6fd9edc9a43e2afaae1ff008e407050ccc18a906118a27f12f766a1de3752144",
+    "transformation": "LF normalization"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\implementation_fprime_hermes_20261021\\scripts\\bootstrap_go.py",
+    "destination": "fprime-hermes-telemetry-lab\\scripts\\bootstrap_go.py",
+    "original_sha256": "ad6192cc309eba7d17943b6a2027486d513d6c1c8378999dc5c43a98c2644518",
+    "curated_sha256": "e28dee8e8a0be37e4c3283a2a66dfff7474fcaec4fab1d62b22f29705dd2fd0b",
+    "transformation": "Documented packaging portability changes; archived source untouched"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\implementation_fprime_hermes_20261021\\scripts\\bootstrap_sources.py",
+    "destination": "fprime-hermes-telemetry-lab\\scripts\\bootstrap_sources.py",
+    "original_sha256": "da6772990225145f6e29063bcfb467702f1654e3166294578d3260c0184bfadc",
+    "curated_sha256": "bc9e828ce405da025699516467a709d3d8afb97f8586dabc4342bc64942b3a5c",
+    "transformation": "Documented packaging portability changes; archived source untouched"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\implementation_fprime_hermes_20261021\\scripts\\capture_sender.py",
+    "destination": "fprime-hermes-telemetry-lab\\scripts\\capture_sender.py",
+    "original_sha256": "e83443bba758019064fd4629854abbc1fe7a5e36b9c18347e90f0941c8119825",
+    "curated_sha256": "e83443bba758019064fd4629854abbc1fe7a5e36b9c18347e90f0941c8119825",
+    "transformation": "LF normalization"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\implementation_fprime_hermes_20261021\\scripts\\compare_results.py",
+    "destination": "fprime-hermes-telemetry-lab\\scripts\\compare_results.py",
+    "original_sha256": "df6e07cc9f434b55f8564ebeae2a1fb9f07c23e293d5070cbe061e611340704e",
+    "curated_sha256": "df6e07cc9f434b55f8564ebeae2a1fb9f07c23e293d5070cbe061e611340704e",
+    "transformation": "LF normalization"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\implementation_fprime_hermes_20261021\\scripts\\configure_sender.py",
+    "destination": "fprime-hermes-telemetry-lab\\scripts\\configure_sender.py",
+    "original_sha256": "2c95dea9177f336d6343ce2a413e4d3ff16d96ecf5d3f7d7fc2d7c6259a51346",
+    "curated_sha256": "2c95dea9177f336d6343ce2a413e4d3ff16d96ecf5d3f7d7fc2d7c6259a51346",
+    "transformation": "LF normalization"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\implementation_fprime_hermes_20261021\\scripts\\convert_dictionary.py",
+    "destination": "fprime-hermes-telemetry-lab\\scripts\\convert_dictionary.py",
+    "original_sha256": "fc6861933bd92484c447a054b26277512c068bc7ab61ee63b00ae2f27dc412b7",
+    "curated_sha256": "fc6861933bd92484c447a054b26277512c068bc7ab61ee63b00ae2f27dc412b7",
+    "transformation": "LF normalization"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\implementation_fprime_hermes_20261021\\scripts\\decode_gds.py",
+    "destination": "fprime-hermes-telemetry-lab\\scripts\\decode_gds.py",
+    "original_sha256": "cf46ad8e52aeed0a2998b1be333e00f94c895f74db1bce0db7812bfbde7c989b",
+    "curated_sha256": "cf46ad8e52aeed0a2998b1be333e00f94c895f74db1bce0db7812bfbde7c989b",
+    "transformation": "LF normalization"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\implementation_fprime_hermes_20261021\\scripts\\environment_record.py",
+    "destination": "fprime-hermes-telemetry-lab\\scripts\\environment_record.py",
+    "original_sha256": "4d32e6c6b999c19a0cec54775dffe05eb4b576e68e299df098c76cea79cedf62",
+    "curated_sha256": "4d32e6c6b999c19a0cec54775dffe05eb4b576e68e299df098c76cea79cedf62",
+    "transformation": "LF normalization"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\implementation_fprime_hermes_20261021\\scripts\\inject_faults.py",
+    "destination": "fprime-hermes-telemetry-lab\\scripts\\inject_faults.py",
+    "original_sha256": "3c0e88b66fb284b45ae443eec78018b14dc43171cbff276229a843810df3b25f",
+    "curated_sha256": "3c0e88b66fb284b45ae443eec78018b14dc43171cbff276229a843810df3b25f",
+    "transformation": "LF normalization"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\implementation_fprime_hermes_20261021\\scripts\\write_run_summary.py",
+    "destination": "fprime-hermes-telemetry-lab\\scripts\\write_run_summary.py",
+    "original_sha256": "ac4375cc2c5ad622933f9a836a50b11619acde53061de81d9f19f432474bd62f",
+    "curated_sha256": "ac4375cc2c5ad622933f9a836a50b11619acde53061de81d9f19f432474bd62f",
+    "transformation": "LF normalization"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\implementation_fprime_hermes_20261021\\receiver\\go.mod",
+    "destination": "fprime-hermes-telemetry-lab\\receiver\\go.mod",
+    "original_sha256": "5f9eac1dab4f9415bd12543ae1ed2df512e6380280e4794c13c4277873ac48c8",
+    "curated_sha256": "5f9eac1dab4f9415bd12543ae1ed2df512e6380280e4794c13c4277873ac48c8",
+    "transformation": "LF normalization"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\implementation_fprime_hermes_20261021\\receiver\\go.sum",
+    "destination": "fprime-hermes-telemetry-lab\\receiver\\go.sum",
+    "original_sha256": "56218b941485952039fabac4e28185d9ffeecae91a7587f0d52a75abc867cea1",
+    "curated_sha256": "56218b941485952039fabac4e28185d9ffeecae91a7587f0d52a75abc867cea1",
+    "transformation": "LF normalization"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\implementation_fprime_hermes_20261021\\receiver\\main.go",
+    "destination": "fprime-hermes-telemetry-lab\\receiver\\main.go",
+    "original_sha256": "6663b279454ca135466b885983740b1c9979ccb220a3eb3d37d91dd4ee4e8fb3",
+    "curated_sha256": "6663b279454ca135466b885983740b1c9979ccb220a3eb3d37d91dd4ee4e8fb3",
+    "transformation": "LF normalization"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\implementation_fprime_hermes_20261021\\receiver\\stream.go",
+    "destination": "fprime-hermes-telemetry-lab\\receiver\\stream.go",
+    "original_sha256": "c4e420d23cacbcba03659b3a8e3f532e6ca82725b9c867f545e527825a36fea9",
+    "curated_sha256": "c4e420d23cacbcba03659b3a8e3f532e6ca82725b9c867f545e527825a36fea9",
+    "transformation": "LF normalization"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\implementation_fprime_hermes_20261021\\receiver\\stream_test.go",
+    "destination": "fprime-hermes-telemetry-lab\\receiver\\stream_test.go",
+    "original_sha256": "422954fdef930ae59bf0f9d4d4d5261415ad58d87944d8cff985939702835c38",
+    "curated_sha256": "422954fdef930ae59bf0f9d4d4d5261415ad58d87944d8cff985939702835c38",
+    "transformation": "LF normalization"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\implementation_fprime_hermes_20261021\\patches\\sender-manifest.json",
+    "destination": "fprime-hermes-telemetry-lab\\patches\\sender-manifest.json",
+    "original_sha256": "430e25dc59c699e7f28e1626c29bdc043dc6202a47707dbbc3312596b2fbf6b3",
+    "curated_sha256": "c9761ec071a2b0fcd032702433208d273365dd2883f6bd0ea487b0e941c7f01c",
+    "transformation": "LF normalization"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\implementation_fprime_hermes_20261021\\patches\\sender.patch",
+    "destination": "fprime-hermes-telemetry-lab\\patches\\sender.patch",
+    "original_sha256": "fbeb9cbc895f3c8db552b4e0e28e632d3083da2c4296ca1989231dd3e9ce9e6d",
+    "curated_sha256": "74bfdc6f6d941cc63c467e0ffe6ac6b0f77c876da4b623ec29323da512738f5b",
+    "transformation": "LF normalization"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\implementation_fprime_hermes_20261021\\patches\\original\\Svc\\Subtopologies\\ComCcsds\\ComCcsdsConfig\\ComCcsdsConfig.fpp",
+    "destination": "fprime-hermes-telemetry-lab\\patches\\original\\Svc\\Subtopologies\\ComCcsds\\ComCcsdsConfig\\ComCcsdsConfig.fpp",
+    "original_sha256": "2cceab1c8c96ab9f48cf448a13f55f654262bf789e4bfa24fed5cee9cb9de468",
+    "curated_sha256": "2cceab1c8c96ab9f48cf448a13f55f654262bf789e4bfa24fed5cee9cb9de468",
+    "transformation": "LF normalization"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\implementation_fprime_hermes_20261021\\patches\\original\\TestDeploymentsProject\\Ref\\Top\\instances.fpp",
+    "destination": "fprime-hermes-telemetry-lab\\patches\\original\\TestDeploymentsProject\\Ref\\Top\\instances.fpp",
+    "original_sha256": "abc8febbc6374546c41994198297b7fe1479b580a016e3288b2b40f645bb13f2",
+    "curated_sha256": "abc8febbc6374546c41994198297b7fe1479b580a016e3288b2b40f645bb13f2",
+    "transformation": "LF normalization"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\implementation_fprime_hermes_20261021\\patches\\original\\TestDeploymentsProject\\Ref\\Top\\RefPackets.fppi",
+    "destination": "fprime-hermes-telemetry-lab\\patches\\original\\TestDeploymentsProject\\Ref\\Top\\RefPackets.fppi",
+    "original_sha256": "fc226a6be362fa944ee6e675d598a4d51366296ea8c4f8979df70c0f32b22b09",
+    "curated_sha256": "fc226a6be362fa944ee6e675d598a4d51366296ea8c4f8979df70c0f32b22b09",
+    "transformation": "LF normalization"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\implementation_fprime_hermes_20261021\\patches\\original\\TestDeploymentsProject\\Ref\\Top\\topology.fpp",
+    "destination": "fprime-hermes-telemetry-lab\\patches\\original\\TestDeploymentsProject\\Ref\\Top\\topology.fpp",
+    "original_sha256": "d7954afb7a9bb2457f53d2f9e77ea8bcb6be3973023c3907c50c3cc70d75674e",
+    "curated_sha256": "d7954afb7a9bb2457f53d2f9e77ea8bcb6be3973023c3907c50c3cc70d75674e",
+    "transformation": "LF normalization"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\implementation_fprime_hermes_20261021\\vendor\\fprime\\TestDeploymentsProject\\build-fprime-automatic-native\\Ref\\Top\\Ref_RefSystemDictionary.json",
+    "destination": "fprime-hermes-telemetry-lab\\data\\fprime-system-dictionary.json",
+    "original_sha256": "f0c4819fb799d2d357fd162339f6ffffc47f9ed681abd76e9ee9b53098a76791",
+    "curated_sha256": "f0c4819fb799d2d357fd162339f6ffffc47f9ed681abd76e9ee9b53098a76791",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\implementation_fprime_hermes_20261021\\outputs\\live_file_transfer\\capture.json",
+    "destination": "fprime-hermes-telemetry-lab\\evidence\\recorded\\capture.json",
+    "original_sha256": "1cdcba950d0d16df871b9e2f0911f43828d0b94ec14d91ec7efdc92bb314784f",
+    "curated_sha256": "1cdcba950d0d16df871b9e2f0911f43828d0b94ec14d91ec7efdc92bb314784f",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\implementation_fprime_hermes_20261021\\outputs\\live_file_transfer\\comparison.json",
+    "destination": "fprime-hermes-telemetry-lab\\evidence\\recorded\\comparison.json",
+    "original_sha256": "f29e79f7acfa480c107f9da3f2ec270d4296d1134d8e832c7862d3974929cfe9",
+    "curated_sha256": "f29e79f7acfa480c107f9da3f2ec270d4296d1134d8e832c7862d3974929cfe9",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\implementation_fprime_hermes_20261021\\outputs\\live_file_transfer\\downlink.bin",
+    "destination": "fprime-hermes-telemetry-lab\\evidence\\recorded\\downlink.bin",
+    "original_sha256": "af7a7b06f5db4436da046bdf1424ca0dcdef6ac6999f68b1cb0666eb1df3c24f",
+    "curated_sha256": "af7a7b06f5db4436da046bdf1424ca0dcdef6ac6999f68b1cb0666eb1df3c24f",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\implementation_fprime_hermes_20261021\\outputs\\live_file_transfer\\gds-stats.json",
+    "destination": "fprime-hermes-telemetry-lab\\evidence\\recorded\\gds-stats.json",
+    "original_sha256": "eb0273d575349a3c0cebbd7666b0fbb8ce63e2cd74050478d36d13ad847aba7b",
+    "curated_sha256": "eb0273d575349a3c0cebbd7666b0fbb8ce63e2cd74050478d36d13ad847aba7b",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\implementation_fprime_hermes_20261021\\outputs\\live_file_transfer\\gds.jsonl",
+    "destination": "fprime-hermes-telemetry-lab\\evidence\\recorded\\gds.jsonl",
+    "original_sha256": "d3a9e16dac4c8e43a7a25d7176eb871bfce20bafd373f6890825e9ef67807513",
+    "curated_sha256": "d3a9e16dac4c8e43a7a25d7176eb871bfce20bafd373f6890825e9ef67807513",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\implementation_fprime_hermes_20261021\\outputs\\live_file_transfer\\hermes-stats.json",
+    "destination": "fprime-hermes-telemetry-lab\\evidence\\recorded\\hermes-stats.json",
+    "original_sha256": "9c2a0e651f7913fff0d1254cbcaa0a1e0133bbff5ae988e9bfa4cb7bc7b4f5b8",
+    "curated_sha256": "9c2a0e651f7913fff0d1254cbcaa0a1e0133bbff5ae988e9bfa4cb7bc7b4f5b8",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\implementation_fprime_hermes_20261021\\outputs\\live_file_transfer\\hermes.jsonl",
+    "destination": "fprime-hermes-telemetry-lab\\evidence\\recorded\\hermes.jsonl",
+    "original_sha256": "cd1e309bb12481642f394d7a496808272ebda33da3866f990c67618767848dbb",
+    "curated_sha256": "cd1e309bb12481642f394d7a496808272ebda33da3866f990c67618767848dbb",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\implementation_fprime_hermes_20261021\\outputs\\live_file_transfer\\manifest.json",
+    "destination": "fprime-hermes-telemetry-lab\\evidence\\recorded\\manifest.json",
+    "original_sha256": "393572e25c4f6ec602e8c08ebd72f5d851dd31f6a4cd97042e0e36bf72554084",
+    "curated_sha256": "393572e25c4f6ec602e8c08ebd72f5d851dd31f6a4cd97042e0e36bf72554084",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\implementation_fprime_hermes_20261021\\outputs\\live_file_transfer\\original-hermes-comparison.json",
+    "destination": "fprime-hermes-telemetry-lab\\evidence\\recorded\\original-hermes-comparison.json",
+    "original_sha256": "767c444fda97e7d8226bbf7c4ffcdeb4dd9da23c933916a4e4969de85efd3dfc",
+    "curated_sha256": "767c444fda97e7d8226bbf7c4ffcdeb4dd9da23c933916a4e4969de85efd3dfc",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\implementation_fprime_hermes_20261021\\outputs\\live_file_transfer\\original-hermes-execution.json",
+    "destination": "fprime-hermes-telemetry-lab\\evidence\\recorded\\original-hermes-execution.json",
+    "original_sha256": "ed4cc5f0a3b5a2742fa8e93009e3b5e83643018a7314e610dd3eeeb9b057c77c",
+    "curated_sha256": "ed4cc5f0a3b5a2742fa8e93009e3b5e83643018a7314e610dd3eeeb9b057c77c",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\implementation_fprime_hermes_20261021\\outputs\\live_file_transfer\\original-hermes-stats.json",
+    "destination": "fprime-hermes-telemetry-lab\\evidence\\recorded\\original-hermes-stats.json",
+    "original_sha256": "b70498130e92b357bd45216f7ecc0c2c8e0fa9cf5c5c158d399a55af6f3180b1",
+    "curated_sha256": "b70498130e92b357bd45216f7ecc0c2c8e0fa9cf5c5c158d399a55af6f3180b1",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\implementation_fprime_hermes_20261021\\outputs\\live_file_transfer\\original-hermes.jsonl",
+    "destination": "fprime-hermes-telemetry-lab\\evidence\\recorded\\original-hermes.jsonl",
+    "original_sha256": "97554bfbcffcd330cd25fcc4cdadb5c81c7fcaacfb83d33bc3122e20454d98d7",
+    "curated_sha256": "97554bfbcffcd330cd25fcc4cdadb5c81c7fcaacfb83d33bc3122e20454d98d7",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\implementation_fprime_hermes_20261021\\outputs\\live_file_transfer\\original-hermes.stderr.log",
+    "destination": "fprime-hermes-telemetry-lab\\evidence\\recorded\\original-hermes.stderr.log",
+    "original_sha256": "d91c799e703891f7160dd9bdb9b152cb89cf365a701479bef4034e7d9002a31a",
+    "curated_sha256": "d91c799e703891f7160dd9bdb9b152cb89cf365a701479bef4034e7d9002a31a",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\implementation_fprime_hermes_20261021\\outputs\\live_file_transfer\\original-hermes.stdout.log",
+    "destination": "fprime-hermes-telemetry-lab\\evidence\\recorded\\original-hermes.stdout.log",
+    "original_sha256": "f328066c92e98befafb999cc5d43755656c7febb4770e7b650783ea1568fb71f",
+    "curated_sha256": "f328066c92e98befafb999cc5d43755656c7febb4770e7b650783ea1568fb71f",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\implementation_fprime_hermes_20261021\\outputs\\live_file_transfer\\payload.dat",
+    "destination": "fprime-hermes-telemetry-lab\\evidence\\recorded\\payload.dat",
+    "original_sha256": "0a44a320571de174033d2e1153da8fa45b6a5ddd7fc091ccf5c90e06db556c02",
+    "curated_sha256": "0a44a320571de174033d2e1153da8fa45b6a5ddd7fc091ccf5c90e06db556c02",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\implementation_fprime_hermes_20261021\\outputs\\live_file_transfer\\REPORT.md",
+    "destination": "fprime-hermes-telemetry-lab\\evidence\\recorded\\REPORT.md",
+    "original_sha256": "407a2f579c651cd6c0cd7f01790103d059c617adf8176b33bff53fa2fea57549",
+    "curated_sha256": "407a2f579c651cd6c0cd7f01790103d059c617adf8176b33bff53fa2fea57549",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\implementation_fprime_hermes_20261021\\outputs\\live_file_transfer\\sender.log",
+    "destination": "fprime-hermes-telemetry-lab\\evidence\\recorded\\sender.log",
+    "original_sha256": "298c0f9bb063804b36ecc53b1c5e8da25171b2578f75ecb0870b17f8d2634153",
+    "curated_sha256": "298c0f9bb063804b36ecc53b1c5e8da25171b2578f75ecb0870b17f8d2634153",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\implementation_fprime_hermes_20261021\\outputs\\live_file_transfer\\summary.json",
+    "destination": "fprime-hermes-telemetry-lab\\evidence\\recorded\\summary.json",
+    "original_sha256": "112d2ee376372b405999c4e8632a88743c60806e01b62e6f9e508222405642dd",
+    "curated_sha256": "112d2ee376372b405999c4e8632a88743c60806e01b62e6f9e508222405642dd",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\implementation_fprime_hermes_20261021\\outputs\\live_file_transfer\\uplink.bin",
+    "destination": "fprime-hermes-telemetry-lab\\evidence\\recorded\\uplink.bin",
+    "original_sha256": "b345e66bbbdcaf245e97d4228545159de76fe513af3097ba92d97c64c3f05496",
+    "curated_sha256": "b345e66bbbdcaf245e97d4228545159de76fe513af3097ba92d97c64c3f05496",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\implementation_fprime_hermes_20261021\\STATUS.md",
+    "destination": "fprime-hermes-telemetry-lab\\docs\\original-status.md",
+    "original_sha256": "dde4986c281602b9f81ffe15bb74686563e7ef5275ec0e34dae87e03b6ba0840",
+    "curated_sha256": "dde4986c281602b9f81ffe15bb74686563e7ef5275ec0e34dae87e03b6ba0840",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\implementation_fprime_hermes_20261021\\vendor\\fprime\\LICENSE.txt",
+    "destination": "fprime-hermes-telemetry-lab\\THIRD_PARTY_LICENSES\\fprime.txt",
+    "original_sha256": "84a2c29a962a800b9dc839e5e5f39a319a1270e4781c8d135da79fbe76f807fc",
+    "curated_sha256": "84a2c29a962a800b9dc839e5e5f39a319a1270e4781c8d135da79fbe76f807fc",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\implementation_fprime_hermes_20261021\\vendor\\hermes\\LICENSE",
+    "destination": "fprime-hermes-telemetry-lab\\THIRD_PARTY_LICENSES\\hermes.txt",
+    "original_sha256": "5dd2de0854e756e03cb8636a558de82ee06cd490259ae02e51fd0dd4738dc156",
+    "curated_sha256": "5dd2de0854e756e03cb8636a558de82ee06cd490259ae02e51fd0dd4738dc156",
+    "transformation": "exact bytes"
+  },
+  {
+    "source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\implementation_fprime_hermes_20261021\\vendor\\fprime-gds\\LICENSE.txt",
+    "destination": "fprime-hermes-telemetry-lab\\THIRD_PARTY_LICENSES\\fprime-gds.txt",
+    "original_sha256": "84a2c29a962a800b9dc839e5e5f39a319a1270e4781c8d135da79fbe76f807fc",
+    "curated_sha256": "84a2c29a962a800b9dc839e5e5f39a319a1270e4781c8d135da79fbe76f807fc",
+    "transformation": "exact bytes"
+  }
+]

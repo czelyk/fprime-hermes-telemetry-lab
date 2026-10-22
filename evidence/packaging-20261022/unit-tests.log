@@ -1,0 +1,10 @@
+=== RUN   TestContinuationCompletionOnLastFrameWithPartialReads
+--- PASS: TestContinuationCompletionOnLastFrameWithPartialReads (0.00s)
+=== RUN   TestCRCFailureDropsPendingAndRecovers
+--- PASS: TestCRCFailureDropsPendingAndRecovers (0.00s)
+=== RUN   TestGapDoesNotJoinUnrelatedPackets
+--- PASS: TestGapDoesNotJoinUnrelatedPackets (0.00s)
+=== RUN   TestOversizePacketAndTruncatedFrameAreReported
+--- PASS: TestOversizePacketAndTruncatedFrameAreReported (0.00s)
+PASS
+ok  	ahmet.local/telemetrylab	2.740s

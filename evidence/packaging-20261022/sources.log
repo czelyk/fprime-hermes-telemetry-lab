@@ -1,0 +1,38 @@
+[
+  {
+    "name": "fprime",
+    "repo": "nasa/fprime",
+    "ref": "558b7ef48edd5d25f3bdddcbbe7afddb9cc22d09",
+    "url": "https://codeload.github.com/nasa/fprime/zip/558b7ef48edd5d25f3bdddcbbe7afddb9cc22d09",
+    "checked_utc": "2026-10-22T19:17:34.190324+00:00",
+    "acquisition": "existing pinned archive",
+    "bytes": 23589516,
+    "sha256": "91be3aa21af304874fa073afe206796a8a6f26f3ddc90a79de80edc77a3e60a0",
+    "extraction": "existing target preserved",
+    "target": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\github_ready_20261022\\fprime-hermes-telemetry-lab\\vendor\\fprime"
+  },
+  {
+    "name": "hermes",
+    "repo": "nasa/hermes",
+    "ref": "7145a1adbf1eb10a5b48bdd7e242a9156c896e4c",
+    "url": "https://codeload.github.com/nasa/hermes/zip/7145a1adbf1eb10a5b48bdd7e242a9156c896e4c",
+    "checked_utc": "2026-10-22T19:17:34.190831+00:00",
+    "acquisition": "existing pinned archive",
+    "bytes": 12125044,
+    "sha256": "14ee7d7541813a88717cb60022c8d8f0c1800e0310cd563607ffdcf779631eff",
+    "extraction": "existing target preserved",
+    "target": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\github_ready_20261022\\fprime-hermes-telemetry-lab\\vendor\\hermes"
+  },
+  {
+    "name": "fprime-gds",
+    "repo": "nasa/fprime-gds",
+    "ref": "ae809def30800445bda42f10b5a7fd2d7cee79f4",
+    "url": "https://codeload.github.com/nasa/fprime-gds/zip/ae809def30800445bda42f10b5a7fd2d7cee79f4",
+    "checked_utc": "2026-10-22T19:17:34.191372+00:00",
+    "acquisition": "existing pinned archive",
+    "bytes": 2589241,
+    "sha256": "b91c33eecbe95b499c634af5afc3a30f16ac457defd24fcb647abac093b2abea",
+    "extraction": "existing target preserved",
+    "target": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\github_ready_20261022\\fprime-hermes-telemetry-lab\\vendor\\fprime-gds"
+  }
+]

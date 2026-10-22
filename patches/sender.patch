@@ -1,0 +1,96 @@
+--- a/Svc/Subtopologies/ComCcsds/ComCcsdsConfig/ComCcsdsConfig.fpp
++++ b/Svc/Subtopologies/ComCcsds/ComCcsdsConfig/ComCcsdsConfig.fpp
+@@ -50,7 +50,7 @@
+         @ Controls whether to span packets across transfer frames (see Svc.ComAggregator).
+         @ Requires Svc.Ccsds.TmFramer as the transfer frame layer (sole consumer of FrameContext.firstHeaderPointer)
+         @ and a ground deframer that reassembles spanned packets using the First Header Pointer.
+-        constant enablePacketSpanning = false
++        constant enablePacketSpanning = true
+     }
+ 
+     # Buffer management constants
+--- a/TestDeploymentsProject/Ref/Top/instances.fpp
++++ b/TestDeploymentsProject/Ref/Top/instances.fpp
+@@ -58,15 +58,6 @@
+     stack size Default.STACK_SIZE \
+     priority 20
+ 
+-  instance wasmSeq: Svc.WasmSequencer base id 0x10007000 \
+-    queue size Default.QUEUE_SIZE \
+-    stack size Default.STACK_SIZE \
+-    priority 20 {
+-      phase Fpp.ToCpp.Phases.configComponents """
+-        wasmSeq.configure(Svc::WasmSequencer::Config(), memAllocator);
+-        """
+-    }
+-
+   instance dpDemo: Ref.DpDemo base id 0x0A10 \
+     queue size Default.QUEUE_SIZE \
+     stack size Default.STACK_SIZE \
+--- a/TestDeploymentsProject/Ref/Top/topology.fpp
++++ b/TestDeploymentsProject/Ref/Top/topology.fpp
+@@ -46,7 +46,6 @@
+     instance linuxTimer
+     instance comDriver
+     instance cmdSeq
+-    instance wasmSeq
+ 
+     # ----------------------------------------------------------------------
+     # Pattern graph specifiers
+@@ -101,8 +100,6 @@
+       rateGroup2Comp.RateGroupMemberOut[4] -> dpDemo.run
+       #connection to FileManager listing feature command for sequencing
+       rateGroup2Comp.RateGroupMemberOut[5] -> FileHandling.Subtopology.fileManagerSchedIn
+-      rateGroup2Comp.RateGroupMemberOut[6] -> wasmSeq.checkTimers
+-      rateGroup2Comp.RateGroupMemberOut[7] -> wasmSeq.writeTelemetry
+ 
+       # Rate group 3
+       rateGroupDriverComp.CycleOut[Ports_RateGroups.rateGroup3] -> rateGroup3Comp.CycleIn
+@@ -151,8 +148,6 @@
+       dpDemo.productRequestOut -> DataProducts.Subtopology.productRequestIn
+       DataProducts.Subtopology.productResponseOut -> dpDemo.productRecvIn
+ 
+-      wasmSeq.getTlmChan -> CdhCore.tlmSend.TlmGet
+-      wasmSeq.getParam ->   FileHandling.prmDb.getPrm
+     }
+ 
+     connections ComCcsds_CdhCore {
+@@ -165,8 +160,6 @@
+       CdhCore.Subtopology.seqCmdStatus       -> ComCcsds.Subtopology.cmdResponseIn
+       cmdSeq.comCmdOut                       -> CdhCore.Subtopology.seqCmdBuff
+       CdhCore.Subtopology.seqCmdStatus       -> cmdSeq.cmdResponseIn
+-      wasmSeq.cmdOut                         -> CdhCore.Subtopology.seqCmdBuff
+-      CdhCore.Subtopology.seqCmdStatus       -> wasmSeq.cmdResponseIn
+     }
+ 
+     connections ComCcsds_FileHandling {
+--- a/TestDeploymentsProject/Ref/Top/RefPackets.fppi
++++ b/TestDeploymentsProject/Ref/Top/RefPackets.fppi
+@@ -14,10 +14,6 @@
+     cmdSeq.CS_CancelCommands
+     cmdSeq.CS_CommandsExecuted
+     cmdSeq.CS_SequencesCompleted
+-    wasmSeq.ControllerState
+-    wasmSeq.InterpreterState
+-    wasmSeq.SequencesSucceeded
+-    wasmSeq.CommandsDispatched
+     ComCcsds.comQueue.comQueueDepth
+     ComCcsds.comQueue.buffQueueDepth
+     ComCcsds.commsBufferManager.TotalBuffs
+@@ -41,10 +37,6 @@
+     FileHandling.fileManager.Errors
+ 
+     cmdSeq.CS_Errors
+-    wasmSeq.SequencesFailed
+-    wasmSeq.SequencesCancelled
+-    wasmSeq.CommandsFailed
+-    wasmSeq.LastTrapReason
+     ComCcsds.commsBufferManager.NoBuffs
+     ComCcsds.commsBufferManager.EmptyBuffs
+ 
+@@ -301,5 +293,4 @@
+ } omit {
+   CdhCore.cmdDisp.CommandErrors
+   cmdSeq.CS_CurrentSequence
+-  wasmSeq.SeqName
+ }

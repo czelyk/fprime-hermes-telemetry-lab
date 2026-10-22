@@ -1,0 +1,21 @@
+{
+  "decoded": {
+    "channels": 766,
+    "events": 16,
+    "file_packets": 16,
+    "packets": 70
+  },
+  "original_hermes": false,
+  "scope": "host software; aligned 1024-byte single-VC stream; 8192-byte packet limit",
+  "stream": {
+    "frames": 39,
+    "rejected_frames": 0,
+    "gaps": 1,
+    "spanning_starts": 8,
+    "packets": 70,
+    "length_errors": 0,
+    "max_pending": 518,
+    "pending_at_eof": 0,
+    "trailing_bytes": 0
+  }
+}

@@ -1,0 +1,104 @@
+"""Replay the preserved actual F Prime capture into a fresh output directory."""
+from pathlib import Path
+import argparse
+import contextlib
+import datetime
+import json
+import os
+import shutil
+import subprocess
+import sys
+import uuid
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / 'tools'))
+from lab import verify_recorded, execute
+
+p = argparse.ArgumentParser()
+p.add_argument('--verify-only', action='store_true')
+args = p.parse_args()
+count = verify_recorded()
+if args.verify_only:
+    print(f'{count} packaged files verified')
+    raise SystemExit(0)
+name = 'replay_' + datetime.datetime.now().strftime('%Y%m%d_%H%M%S') + '_' + uuid.uuid4().hex[:6]
+output = ROOT / 'outputs' / name
+shutil.copytree(ROOT / 'evidence/recorded', output)
+def py(label, script, *arguments):
+    execute([sys.executable, ROOT / 'scripts' / script, *arguments], ROOT, output / (label + '.log'))
+
+py('sources', 'bootstrap_sources.py')
+go = Path(subprocess.check_output([sys.executable, str(ROOT / 'scripts/bootstrap_go.py')], cwd=ROOT, text=True).strip().splitlines()[-1])
+env = os.environ.copy()
+env.update(GOROOT=str(go.parent.parent), GOPATH=str(ROOT / 'tools/go_path'),
+           GOCACHE=str(ROOT / 'tools/go_cache'), GOTMPDIR=str(ROOT / 'tools/go_tmp'),
+           CGO_ENABLED='0', GOENV='off', GOTOOLCHAIN='local')
+Path(env['GOTMPDIR']).mkdir(parents=True, exist_ok=True)
+(ROOT / 'build').mkdir(exist_ok=True)
+@contextlib.contextmanager
+def short_go_paths():
+    # Go's Windows vet subprocesses can exceed legacy directory limits here.
+    # A temporary unused drive alias changes paths only, and is removed afterwards.
+    if os.name != 'nt':
+        yield ROOT
+        return
+    used = {x.upper().rstrip('\\') for x in os.listdrives()}
+    drive = next((x + ':' for x in 'RQPONMLKJIHG' if x + ':' not in used), None)
+    if drive is None:
+        raise RuntimeError('No unused drive alias is available; use a shorter checkout path.')
+    subprocess.run(['subst', drive, str(ROOT)], check=True)
+    try:
+        yield Path(drive + '\\')
+    finally:
+        subprocess.run(['subst', drive, '/D'], check=True)
+
+with short_go_paths() as short:
+    go_env = env.copy()
+    go_env.update(GOROOT=str(short / 'tools/go'), GOPATH=str(short / 'tools/go_path'),
+                  GOCACHE=str(short / 'tools/go_cache'), GOTMPDIR=str(short / 'tools/go_tmp'))
+    for label, arguments in [('dependencies', ['mod', 'download']), ('unit-tests', ['test', '-v', '.']),
+                             ('build', ['build', '-o', str(short / 'build/lab-receiver.exe'), '.'])]:
+        execute([short / 'tools/go/bin/go.exe', *arguments], short / 'receiver',
+                output / (label + '.log'), go_env, timeout=900)
+receiver = ROOT / 'build/lab-receiver.exe'
+dictionary = ROOT / 'data/fprime-system-dictionary.json'
+hermes_dictionary = ROOT / 'build/hermes-dictionary.json'
+py('dictionary', 'convert_dictionary.py', dictionary, hermes_dictionary)
+
+def receiver_run(prefix, wire, original=False):
+    execute([receiver, *(['--original'] if original else []), '--dictionary', hermes_dictionary,
+             '--input', wire, '--output', output / (prefix + '.jsonl'),
+             '--stats', output / (prefix + '-stats.json')], ROOT, output / (prefix + '.log'), env)
+
+receiver_run('hermes', output / 'downlink.bin')
+py('gds', 'decode_gds.py', '--dictionary', dictionary, '--input', output / 'downlink.bin',
+   '--output', output / 'gds.jsonl', '--stats', output / 'gds-stats.json')
+py('compare', 'compare_results.py', '--hermes', output / 'hermes.jsonl', '--gds', output / 'gds.jsonl',
+   '--expected-file', output / 'payload.dat', '--output', output / 'comparison.json')
+receiver_run('original-hermes', output / 'downlink.bin', original=True)
+# The unchanged receiver is a deliberately weaker baseline. Preserve its actual nonzero result.
+with (output / 'compare-original.log').open('w', encoding='utf-8') as log:
+    baseline = subprocess.run([sys.executable, ROOT / 'scripts/compare_results.py', '--hermes',
+                              output / 'original-hermes.jsonl', '--gds', output / 'gds.jsonl',
+                              '--expected-file', output / 'payload.dat', '--output',
+                              output / 'original-hermes-comparison.json'], cwd=ROOT,
+                              stdout=log, stderr=subprocess.STDOUT)
+    assert baseline.returncode in (0, 1)
+py('faults', 'inject_faults.py', output / 'downlink.bin', output / 'faults')
+for case in ('drop_continuation_frame', 'crc_error_continuation_frame'):
+    relative = 'faults/' + case
+    receiver_run(relative + '-hermes', output / (relative + '.bin'))
+    py(case + '-gds', 'decode_gds.py', '--dictionary', dictionary, '--input', output / (relative + '.bin'),
+       '--output', output / (relative + '-gds.jsonl'), '--stats', output / (relative + '-gds-stats.json'))
+    py(case + '-compare', 'compare_results.py', '--hermes', output / (relative + '-hermes.jsonl'),
+       '--gds', output / (relative + '-gds.jsonl'), '--reference', output / 'hermes.jsonl',
+       '--output', output / (relative + '-comparison.json'))
+py('report', 'write_run_summary.py', output)
+result = json.loads((output / 'summary.json').read_text())
+assert result['nominal']['pass'] and all(x['pass'] for x in result['fault_cases'].values())
+assert result['nominal']['packets'] == 73 and result['nominal']['channel_measurements'] == 766
+verification = dict(pass_replay=True, output=str(output), packaged_files_verified=count,
+                    native_replay=True, docker_required=False, physical_measurements=False,
+                    packets=result['nominal']['packets'], channel_measurements=result['nominal']['channel_measurements'])
+(output / 'verification.json').write_text(json.dumps(verification, indent=2), encoding='utf-8')
+print(json.dumps(verification, indent=2))

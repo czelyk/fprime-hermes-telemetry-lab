@@ -1,0 +1,10 @@
+--- original/Run-Lab.ps1
++++ portable/Run-Lab.ps1
+@@ -68,6 +68,7 @@
+     } elseif ($CaptureDirectory -eq '') { $CaptureDirectory = 'outputs/live_file_transfer' }
+     if (-not (Test-Path "$CaptureDirectory/downlink.bin")) { throw 'No capture exists for replay' }
+     $Dictionary = 'vendor/fprime/TestDeploymentsProject/build-fprime-automatic-native/Ref/Top/Ref_RefSystemDictionary.json'
++    if ($ReplayOnly) { $Dictionary = 'data/fprime-system-dictionary.json' }
+     Invoke-LabStep -Label 'dictionary-conversion' -Executable 'python' -StepArguments @(
+         'scripts/convert_dictionary.py',$Dictionary,'build/hermes-dictionary.json')
+     Push-Location receiver
