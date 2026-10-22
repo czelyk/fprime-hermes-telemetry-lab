@@ -1,0 +1,15 @@
+{
+  "bytes": 40960,
+  "sha256": "af7a7b06f5db4436da046bdf1424ca0dcdef6ac6999f68b1cb0666eb1df3c24f",
+  "requested_capture_seconds": 30,
+  "wall_seconds": 32.043325181,
+  "sender_exit_code": 0,
+  "transport": "local TCP; no physical MCU or RF",
+  "file_stimulus": {
+    "bytes": 8192,
+    "sha256": "0a44a320571de174033d2e1153da8fa45b6a5ddd7fc091ccf5c90e06db556c02",
+    "command": "FileHandling.fileDownlink.SendFile",
+    "uplink_bytes": 58,
+    "source": "deterministic local test data, not mission data"
+  }
+}

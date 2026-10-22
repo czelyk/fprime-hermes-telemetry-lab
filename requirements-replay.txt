@@ -1,0 +1,8 @@
+# Dependencies for the exercised headless GDS imports, not the web UI or sender build.
+lxml==6.1.3
+lark==1.3.1
+pydantic==2.14.1
+PyYAML==6.0.3
+spacepackets==0.32.0
+crcmod==1.7
+pluggy==1.7.0

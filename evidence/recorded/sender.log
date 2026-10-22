@@ -1,0 +1,31 @@
+Hit Ctrl-C to quit
+EVENT: (83898374) (2:1792612325,883579) WARNING_HI: (FileHandling.prmDb) PrmFileReadError : Parameter file read failed in stage OPEN (0) with record 0 and error 1
+EVENT: (83898368) (2:1792612325,883684) WARNING_LO: (FileHandling.prmDb) PrmIdNotFound : Parameter ID 0x10022000 not found
+EVENT: (268574722) (2:1792612325,883783) ACTIVITY_LO: (Ref.recvBuffComp) BuffRecvParameterUpdated : BuffRecv Parameter 0 was updated
+EVENT: (83898368) (2:1792612325,883964) WARNING_LO: (FileHandling.prmDb) PrmIdNotFound : Parameter ID 0x10022001 not found
+EVENT: (268574722) (2:1792612325,884056) ACTIVITY_LO: (Ref.recvBuffComp) BuffRecvParameterUpdated : BuffRecv Parameter 1 was updated
+EVENT: (83898368) (2:1792612325,884271) WARNING_LO: (FileHandling.prmDb) PrmIdNotFound : Parameter ID 0x10010000 not found
+EVENT: (268500994) (2:1792612325,884363) ACTIVITY_LO: (Ref.sendBuffComp) BuffSendParameterUpdated : BuffSend Parameter 0 was updated
+EVENT: (83898368) (2:1792612325,884443) WARNING_LO: (FileHandling.prmDb) PrmIdNotFound : Parameter ID 0x10010001 not found
+EVENT: (268500994) (2:1792612325,884528) ACTIVITY_LO: (Ref.sendBuffComp) BuffSendParameterUpdated : BuffSend Parameter 1 was updated
+EVENT: (83898368) (2:1792612325,884684) WARNING_LO: (FileHandling.prmDb) PrmIdNotFound : Parameter ID 0x10005000 not found
+
+[NOTE] Task Permissions:
+[NOTE]
+[NOTE] You have insufficient permissions to create a task with priority and/or cpu affinity.
+[NOTE] A task without priority and affinity will be created.
+[NOTE]
+[NOTE] There are three possible resolutions:
+[NOTE] 1. Use tasks without priority and affinity using parameterless start()
+[NOTE] 2. Run this executable as a user with task priority permission
+[NOTE] 3. Grant capability with "setcap 'cap_sys_nice=eip'" or equivalent
+
+EVENT: (16789504) (2:1792612325,886216) ACTIVITY_LO: (CdhCore.version) FrameworkVersion : Framework Version: [v4.3.0]
+EVENT: (16789505) (2:1792612325,886373) ACTIVITY_LO: (CdhCore.version) ProjectVersion : Project Version: [v4.3.0]
+Connected to 127.0.0.1:50781 as a tcp client
+EVENT: (16777217) (2:1792612325,950396) COMMAND: (CdhCore.cmdDisp) OpCodeDispatched : Opcode 0x5001000 dispatched to port 9
+EVENT: (83890184) (2:1792612326,890704) ACTIVITY_HI: (FileHandling.fileDownlink) SendStarted : Downlink of 8192 bytes started from payload.dat to received.dat
+EVENT: (83890178) (2:1792612326,894466) ACTIVITY_HI: (FileHandling.fileDownlink) FileSent : Sent file payload.dat to file received.dat
+EVENT: (16777218) (2:1792612326,895050) COMMAND: (CdhCore.cmdDisp) OpCodeCompleted : Opcode 0x5001000 completed
+[WARNING] ReceiveTask failed to recv from port with status -8 and errno 0
+Exiting...

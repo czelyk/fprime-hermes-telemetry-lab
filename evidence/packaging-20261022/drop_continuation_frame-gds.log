@@ -1,0 +1,16 @@
+[WARNING] TM frame loss detected. Discarding partial packet data.
+APID 3 received sequence count: 5 (expected: 2)
+{
+  "decoded": {
+    "discarded_bytes": 0,
+    "packets": 70,
+    "events": 16,
+    "channels": 766,
+    "file_packets": 16
+  },
+  "remaining_stream_bytes": 0,
+  "pending_packet_bytes": 0,
+  "eager_completion": false,
+  "gds_source": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\github_ready_20261022\\fprime-hermes-telemetry-lab\\vendor\\fprime-gds\\src\\fprime_gds",
+  "scope": "full imports and dictionary decoders; headless, no GDS web UI"
+}

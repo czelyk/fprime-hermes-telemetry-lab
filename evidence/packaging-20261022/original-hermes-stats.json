@@ -1,0 +1,11 @@
+{
+  "decoded": {
+    "channels": 714,
+    "events": 14,
+    "file_packets": 2,
+    "packets": 51
+  },
+  "original_hermes": true,
+  "scope": "host software; aligned 1024-byte single-VC stream; 8192-byte packet limit",
+  "stream": null
+}

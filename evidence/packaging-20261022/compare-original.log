@@ -1,0 +1,21 @@
+{
+  "packet_order_and_bytes_equal": false,
+  "channel_values_and_timestamps_equal": false,
+  "all_records_equal": false,
+  "packets": 51,
+  "channel_measurements": 714,
+  "distinct_channels": 36,
+  "hermes_only_records": 0,
+  "gds_only_records": 91,
+  "hermes_file": {
+    "complete": false,
+    "reason": "not exactly one file start and end"
+  },
+  "gds_file": {
+    "complete": true,
+    "bytes": 8192,
+    "sha256": "0a44a320571de174033d2e1153da8fa45b6a5ddd7fc091ccf5c90e06db556c02",
+    "expected_sha256": "0a44a320571de174033d2e1153da8fa45b6a5ddd7fc091ccf5c90e06db556c02"
+  },
+  "pass": false
+}

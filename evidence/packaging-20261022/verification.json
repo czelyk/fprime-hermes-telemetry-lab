@@ -1,0 +1,10 @@
+{
+  "pass_replay": true,
+  "output": "C:\\Users\\Ahmet\\Documents\\Codex\\2026-10-13\\iac-2027-konu-arastirmasi\\automation\\iterative_20261018\\github_ready_20261022\\fprime-hermes-telemetry-lab\\outputs\\replay_20261022_221733_208946",
+  "packaged_files_verified": 65,
+  "native_replay": true,
+  "docker_required": false,
+  "physical_measurements": false,
+  "packets": 73,
+  "channel_measurements": 766
+}

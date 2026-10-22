@@ -1,0 +1,16 @@
+{
+  "source_sha256": "af7a7b06f5db4436da046bdf1424ca0dcdef6ac6999f68b1cb0666eb1df3c24f",
+  "target_frame_index": 2,
+  "selection": "first actual TM frame with a nonzero ordinary FHP; deterministic integration fixture",
+  "fault_model": "whole-frame erasure or single data-bit flip; no physical link/radiation claim",
+  "cases": {
+    "drop_continuation_frame": {
+      "bytes": 39936,
+      "sha256": "61d5606ca57ef996317e2ccff2cb4530dd66b9caa0d8b930f02def3ba0c8a0e3"
+    },
+    "crc_error_continuation_frame": {
+      "bytes": 40960,
+      "sha256": "5c283cfb61d8cc336754f84cd28d09be0dd5d8b7548208ac4918a9ee8b3da512"
+    }
+  }
+}

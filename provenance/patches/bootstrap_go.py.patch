@@ -1,0 +1,15 @@
+--- original/bootstrap_go.py
++++ portable/bootstrap_go.py
+@@ -8,11 +8,7 @@
+ 
+ ROOT = Path(__file__).resolve().parents[1]
+ local = ROOT / 'tools/go/bin/go.exe'
+-earlier = ROOT.parent / 'pilot_fprime_spanning_20261021/tools/go/bin/go.exe'
+-if not local.exists() and earlier.exists():
+-    # Reuse the existing public runtime without altering the earlier evidence.
+-    selected = earlier
+-elif local.exists():
++if local.exists():
+     selected = local
+ else:
+     archive = ROOT / 'downloads/go1.27.3.windows-amd64.zip'

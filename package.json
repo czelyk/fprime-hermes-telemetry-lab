@@ -1,0 +1,5 @@
+{
+  "name": "fprime-hermes-telemetry-lab",
+  "title": "F Prime Hermes Telemetry Lab",
+  "scope": "Actual host C++ sender and headless decoders; no physical MCU/RF measurement"
+}

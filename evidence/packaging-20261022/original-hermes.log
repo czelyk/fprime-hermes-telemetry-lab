@@ -1,0 +1,12 @@
+[2m2026-10-22T22:18:02+03:00[0m [92mINFO[0m loadded CCSDS configuration [2mspaceraftId=[0m68 [2mapidCmd=[0m0 [2mapidFile=[0m3 [2mapidLog=[0m2 [2mapidTlm=[0m1 [2mapidTlmPkt=[0m4 [2mapidDp=[0m5 [2mpkg=[0mfprime
+{
+  "decoded": {
+    "channels": 714,
+    "events": 14,
+    "file_packets": 2,
+    "packets": 51
+  },
+  "original_hermes": true,
+  "scope": "host software; aligned 1024-byte single-VC stream; 8192-byte packet limit",
+  "stream": null
+}

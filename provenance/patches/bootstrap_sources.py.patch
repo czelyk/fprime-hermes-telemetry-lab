@@ -1,0 +1,20 @@
+--- original/bootstrap_sources.py
++++ portable/bootstrap_sources.py
+@@ -22,9 +22,6 @@
+     try:
+         if archive.exists():
+             data=archive.read_bytes();record['acquisition']='existing pinned archive'
+-        elif name=='hermes' and (ROOT.parent/'pilot_fprime_spanning_20261021/hermes-source.zip').exists():
+-            data=(ROOT.parent/'pilot_fprime_spanning_20261021/hermes-source.zip').read_bytes()
+-            archive.write_bytes(data);record['acquisition']='reused original immutable public archive from earlier screen'
+         else:
+             with urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':'Public F Prime implementation source acquisition'}),timeout=45) as response:
+                 data=response.read();record['status']=response.status
+@@ -52,6 +49,6 @@
+     except Exception as e:record['error']=f'{type(e).__name__}: {e}'
+     return record
+ with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:records=list(pool.map(acquire,SPECS.items()))
+-(ROOT/'sources.lock.json').write_text(json.dumps(records,indent=2),encoding='utf-8')
++(ROOT/'outputs/source-acquisition.json').write_text(json.dumps(records,indent=2),encoding='utf-8')
+ print(json.dumps(records,indent=2))
+ if any('error' in r for r in records):raise SystemExit(1)

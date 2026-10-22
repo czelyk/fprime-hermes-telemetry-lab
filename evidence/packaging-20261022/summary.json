@@ -1,0 +1,61 @@
+{
+  "completed_utc": "2026-10-22T19:18:04.271532+00:00",
+  "nominal": {
+    "packet_order_and_bytes_equal": true,
+    "channel_values_and_timestamps_equal": true,
+    "all_records_equal": true,
+    "packets": 73,
+    "channel_measurements": 766,
+    "distinct_channels": 60,
+    "hermes_only_records": 0,
+    "gds_only_records": 0,
+    "hermes_file": {
+      "complete": true,
+      "bytes": 8192,
+      "sha256": "0a44a320571de174033d2e1153da8fa45b6a5ddd7fc091ccf5c90e06db556c02",
+      "expected_sha256": "0a44a320571de174033d2e1153da8fa45b6a5ddd7fc091ccf5c90e06db556c02"
+    },
+    "gds_file": {
+      "complete": true,
+      "bytes": 8192,
+      "sha256": "0a44a320571de174033d2e1153da8fa45b6a5ddd7fc091ccf5c90e06db556c02",
+      "expected_sha256": "0a44a320571de174033d2e1153da8fa45b6a5ddd7fc091ccf5c90e06db556c02"
+    },
+    "pass": true
+  },
+  "fault_cases": {
+    "drop_continuation_frame": {
+      "packet_order_and_bytes_equal": true,
+      "channel_values_and_timestamps_equal": true,
+      "all_records_equal": true,
+      "packets": 70,
+      "channel_measurements": 766,
+      "distinct_channels": 60,
+      "hermes_only_records": 0,
+      "gds_only_records": 0,
+      "surviving_packets_are_ordered_originals": true,
+      "no_invented_decoded_records": true,
+      "lost_packets_vs_reference": 3,
+      "pass": true
+    },
+    "crc_error_continuation_frame": {
+      "packet_order_and_bytes_equal": true,
+      "channel_values_and_timestamps_equal": true,
+      "all_records_equal": true,
+      "packets": 70,
+      "channel_measurements": 766,
+      "distinct_channels": 60,
+      "hermes_only_records": 0,
+      "gds_only_records": 0,
+      "surviving_packets_are_ordered_originals": true,
+      "no_invented_decoded_records": true,
+      "lost_packets_vs_reference": 3,
+      "pass": true
+    }
+  },
+  "original_hermes_comparison_pass": false,
+  "implementation_milestone": true,
+  "physical_validation": false,
+  "final_research_selection": false,
+  "automation": "PAUSED"
+}

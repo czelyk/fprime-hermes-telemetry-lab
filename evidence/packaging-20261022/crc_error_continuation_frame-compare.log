@@ -1,0 +1,14 @@
+{
+  "packet_order_and_bytes_equal": true,
+  "channel_values_and_timestamps_equal": true,
+  "all_records_equal": true,
+  "packets": 70,
+  "channel_measurements": 766,
+  "distinct_channels": 60,
+  "hermes_only_records": 0,
+  "gds_only_records": 0,
+  "surviving_packets_are_ordered_originals": true,
+  "no_invented_decoded_records": true,
+  "lost_packets_vs_reference": 3,
+  "pass": true
+}
